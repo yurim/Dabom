@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>다봄모임/게시글목록 채팅하기</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <script defer src="../assets/js/custom.js"></script>
+</head>
+<body>
+<main>
+    <div class="chat_wrap">
+        <div class="container">
+            <nav class="left_nav">
+                <h1 class="logo">
+                    <a href="javascript:"><img src="../assets/images/logo.svg" alt="로고"></a>
+                </h1>
+                <ul class="nav_list">
+                    <li>
+                        <div class="profile_img">
+                            <img src="../assets/images/default-profile.png" alt="프로필이미지">
+                        </div>
+                        <p>오유림</p>
+                    </li>
+                    <li>
+                        <div class="profile_img">
+                            <img src="../assets/images/default-profile.png" alt="프로필이미지">
+                        </div>
+                        <p>귤귤이</p>
+                    </li>
+                    <li>
+                        <div class="profile_img">
+                            <img src="../assets/images/default-profile.png" alt="프로필이미지">
+                        </div>
+                        <p>구마구마</p>
+                    </li>
+                </ul>
+            </nav>
+            <div class="chat_box">
+                <div class="inner">
+                    <div class="chat_header">
+                        <div class="show_mobile">
+                            <div class="m_header_box">
+                                <a href="javascript:">
+                                    <object data="../assets/images/exit-icon.svg" type="image/svg+xml" aria-label="나가기아이콘"></object>
+                                </a>
+                                <h2>종로역 식단관리 모임</h2>
+                                <div class="utile_list">
+                                    <a class="hamburger" href="javascript:">
+                                        <div class="line top"></div>
+                                        <div class="line bottom"></div>
+                                        <div class="line center"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_box">
+                            <h2>종로역 식단관리 모임</h2>
+                            <div class="utile_list">
+                                <a href="javascript:">
+                                    <object data="../assets/images/exit-icon.svg" type="image/svg+xml"
+                                            aria-label="나가기아이콘"></object>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg_box">
+                        <div class="chat ch1">
+                            <div class="profile_img">
+                                <img src="../assets/images/default-profile.png" alt="프로필이미지">
+                            </div>
+                            <div class="text_box">
+                                <div class="name">귤귤이</div>
+                                <div class="mag_info">
+                                    <div class="mag">안녕하세요! 반갑습니다~</div>
+                                    <div class="time">오후 6:18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat ch2">
+                            <div class="text_box">
+                                <div class="mag_info">
+                                    <div class="mag">반갑습니다</div>
+                                    <div class="time">오후 6:18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat ch1">
+                            <div class="profile_img">
+                                <img src="../assets/images/default-profile.png" alt="프로필이미지">
+                            </div>
+                            <div class="text_box">
+                                <div class="name">귤귤이</div>
+                                <div class="mag_info">
+                                    <div class="chat_image">
+                                        <img src="../assets/images/default-profile.png" alt="">
+                                    </div>
+                                    <div class="time">오후 6:18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat ch2">
+                            <div class="text_box">
+                                <div class="mag_info">
+                                    <div class="chat_image">
+                                        <img src="../assets/images/default-profile.png" alt="">
+                                    </div>
+                                    <div class="time">오후 6:18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat">
+                            <div class="text_box">
+                                <div class="mag_in_out">
+                                    <div class="message">유림님이 나갔습니다.</div>
+                                    <div class="message">유림님이 들어왔습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg_btn_box">
+                        <a class="filebox" href="javascript:">
+                            <form action='/chat/uploadfile' method="POST" entype="multipart/form-data">
+                                <input type="file" name="file" id="input">
+                                <label class="upload_img" for="input">
+                                    <i class="img_icon"></i>
+                                </label>
+                            </form>
+                        </a>
+                        <input type="text" placeholder="메세지를 입력해주세요.">
+                        <a href="javascript:">전송</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="show_mobile">
+            <div class="m_nav">
+                <div class="m_nav_item">
+                    <div class="top">
+                        <h1 class="logo">
+                            <a href="javascript:"><img src="../assets/images/logo.svg" alt="로고"></a>
+                        </h1>
+                    </div>
+                    <ul class="nav_list">
+                            <li>
+                                <div class="profile_img">
+                                    <img src="../assets/images/default-profile.png" alt="프로필이미지">
+                                </div>
+                                <p>오유림</p>
+                            </li>
+                            <li>
+                                <div class="profile_img">
+                                    <img src="../assets/images/default-profile.png" alt="프로필이미지">
+                                </div>
+                                <p>귤귤이</p>
+                            </li>
+                            <li>
+                                <div class="profile_img">
+                                    <img src="../assets/images/default-profile.png" alt="프로필이미지">
+                                </div>
+                                <p>구마구마</p>
+                            </li>
+                        </ul>
+                    <a href="javascript:">
+                        <object data="../assets/images/exit-icon.svg" type="image/svg+xml" aria-label="나가기아이콘"></object>
+                        <span>채팅방 나가기</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</main>
+</body>
+</html>
