@@ -1,18 +1,20 @@
 /* ==============================================================
 마이페이지
 ==============================================================*/
-.mypage_wrap .container { display: flex; box-sizing: border-box; height: 100vh; }
+.red_btn { width: 100%; cursor: pointer; color: white; background: #F43B00; text-align: center; height: 45px; border-radius: 6px; font-size: 18px; }
+.mypage_wrap .container { display: flex; box-sizing: border-box;  }
 .mypage_wrap .left_box { width: 20%; display: flex; flex-flow: column; align-items: center; padding-top: 110px; position: relative; z-index: 20;}
-.mypage_wrap .left_box:before { content: ""; position: absolute; right:0; top: 0; width: 15px; height: 100vh; z-index: 10;
+.mypage_wrap .left_box:before { content: ""; position: absolute; right:0; top: 0; width: 20px; height: 100%; z-index: 10;
     background: url("../images/zigzag-02.svg") repeat-x; background-size: cover;}
 .mypage_wrap .left_box .nav_list { display: flex; flex-flow: column; gap: 25px; overflow-y: auto; }
 .mypage_wrap .left_box .nav_list li { display: flex; align-items: center; }
 .mypage_wrap .left_box .nav_list li p { font-weight: 300; padding-left: 10px; }
-.mypage_wrap .right_box { width: calc(100% - 20%); max-width: 460px; margin: 50px auto;}
+.mypage_wrap .right_box { width: calc(100% - 20%); max-width: 460px; margin: 100px auto;}
 .mypage_wrap .form_list .from_group:nth-child(2) h3:before, .mypage_wrap .from_group:nth-child(3) h3:before,
 .mypage_wrap .from_group:nth-child(4) h3:before, .mypage_wrap .from_group:nth-child(7) h3:before
 { content: ""; width: 4px; height: 4px; border-radius: 50%; background: #FDDE58; display: inline-block;
     position: absolute; right: -10px; top: calc(50% - 3px); transform: translateY(-50%); }
+.mypage_wrap .form_list { margin-bottom: 25px; }
 
 
 
