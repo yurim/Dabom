@@ -6,7 +6,7 @@
 .join_wrap .logo a , .mypage_wrap .logo a { width: 78px; display: block; margin: 0 auto; }
 .join_wrap .filebox , .mypage_wrap .filebox { display: flex; justify-content: center; margin-bottom: 35px; }
 .join_wrap .filebox .profile_img_box , .mypage_wrap .filebox .profile_img_box { position: relative; cursor: pointer; }
-.join_wrap .filebox .profile_img , .mypage_wrap .filebox .profile_img { display: inline-block; width: 90px; height: 90px; border-radius: 50%; overflow: hidden; }
+.join_wrap .filebox .profile_img { display: inline-block; width: 90px; height: 90px; border-radius: 50%; overflow: hidden; }
 .join_wrap .filebox .camera_icon, .mypage_wrap .filebox .camera_icon  { display: inline-block; border-radius: 50%; width: 35px; height: 35px; overflow: hidden;
  position: absolute; right: calc(50% - 70px); bottom: 4px; transform: translateX(-50%);
  background: #909090 url("../images/camera.svg") no-repeat 50%; }
