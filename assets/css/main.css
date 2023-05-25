@@ -1,0 +1,24 @@
+/* ==============================================================
+해더
+==============================================================*/
+header { display: flex; align-items: center; margin: 0 35px; height: 70px; border: 1px solid #222; background: white;
+    border-radius: 50px; padding: 0 24px; position: fixed; width: calc(100% - 70px); top: 8px; z-index: 1000; }
+header .menu { display: flex; gap: 10px; font-size: 18px; }
+header .logo { position: absolute; left: 50%; transform: translateX(-50%); }
+header .login{ margin-left: auto; }
+
+/* ==============================================================
+section 색션
+==============================================================*/
+section { }
+/* hero 색션 */
+.hero_wrap { width: 100%; height: 100vh; background: #FDDE58; overflow: hidden; display: flex; position: relative; z-index: 20; }
+.hero_wrap:after { content: ""; position: absolute; left: 0; bottom: 0; background: url("/assets/images/zigzag-04.svg") repeat-x;     width: 100%;
+    height: 40px; background-size: 80px; }
+.hero_wrap .container { display: flex; align-items: center; }
+.hero_wrap .text_box { display: flex; flex-flow: column; padding-top: 50px; }
+.hero_wrap .text_box .top_txt { background: #F43B00; color: white; font-size: clamp(1rem, 1.5vw, 1.25rem); padding: 5px 15px;
+    align-self: flex-start; margin-bottom: 30px; }
+.hero_wrap .text_box .bottom_txt { font-family: "Cafe24Ohsquare", sans-serif; font-size: clamp(2.25rem, 7vw, 5.625rem); }
+.hero_wrap .text_box .bottom_txt em { color: #F43B00; }
+.hero_wrap .img_box { max-width: 500px; position: relative; margin-left: auto; bottom: -200px; }
