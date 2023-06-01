@@ -12,9 +12,25 @@
 .show_mobile { display: none; }
 .hidden {overflow: hidden; border: 0; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%); display: inline-block; }
-@media all and (max-width: 400px) {
-    .container { padding: 0 24px; }
-}
+
+/* 고정 알림 */
+.right_menu { position: fixed; right: 35px; top: 25px; z-index: 500;}
+.right_menu .bell { display: inline-flex; position: relative; width: 40px; height: 40px;background: white;
+    border-radius: 50%; box-shadow: 0 4px 4px rgba(204, 204, 204, 0.25); justify-content: center; align-items: center; padding-right: 2px; }
+.right_menu .bell:before { content: ""; display: block; width: 5px; height: 5px; background: #F43B00; border-radius: 50%;
+    position: absolute; right: 8px; top: 7px; z-index: 500; }
+
+/* ==============================================================
+해더
+==============================================================*/
+header { display: flex; align-items: center; margin: 0 35px; height: 60px; border: 1px solid #FDDE58; background: white;
+    border-radius: 50px; padding: 0 24px; position: fixed; width: calc(100% - 70px); top: 8px; z-index: 1000; }
+header .menu { display: flex; gap: 10px; font-size: 14px; }
+header .logo { position: absolute; left: 50%; transform: translateX(-50%); }
+header .logo a { display: block; width: 60px;}
+header .login { margin-left: auto; }
+header .login a { display: block; width: 25px; }
+
 *:focus { outline-color: #F43B00; }
 input[type=search]:focus { outline:none; }
 /* IE */
@@ -49,3 +65,7 @@ input[type="text"],input[type="password"] { width: 100%; }
 .radio-box input:checked + label:before { border: 1px solid #F43B00; box-shadow: inset 0 0 0 4px #fff; background: #F43B00; }
 .filebox input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
     clip:rect(0,0,0,0); border: 0; }
+
+@media all and (max-width: 400px) {
+    .container { padding: 0 24px; }
+}
