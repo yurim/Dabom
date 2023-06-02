@@ -17,6 +17,11 @@
     clip-path: inset(50%); display: inline-block; }
 
 /* 고정 알림 */
+.loading.fix { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2000;
+    background: black; opacity: 0.3; }
+.loading.fix img { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
+/* 고정 알림 */
 .right_menu { position: fixed; right: 35px; top: 25px; z-index: 500;}
 .right_menu .bell { display: inline-flex; position: relative; width: 40px; height: 40px;background: white;
     border-radius: 50%; box-shadow: 0 4px 4px rgba(204, 204, 204, 0.25); justify-content: center; align-items: center; padding-right: 2px; }
@@ -35,20 +40,36 @@ header .pc_header .login { margin-left: auto; }
 header .pc_header .login a { display: block; width: 25px; }
 
 /* 모바일 해더 */
-.m_header {
-    padding: 0 24px; position: fixed; width: 100%; top: 20px; z-index: 1000;
+.m_header { padding: 0 24px; position: fixed; width: 100%; top: 20px; z-index: 1000;
     display: flex; justify-content: space-between; align-items: center; }
-.m_header .logo a { display: block; width: 60px; }
+.m_header .logo object { pointer-events: none; display: block; width: 60px; }
+.slide_header .logo object { pointer-events: none; display: block; width: 60px;  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(106%) contrast(101%); }
 
 /* 모바일 햄버거 버튼*/
 .hamburger { display: block; width: 35px; height: 15px; border: none; background: transparent; position: relative; z-index: 20; }
-.hamburger .line{ width: 100%; height: 3px; position: absolute; display: block;background: #222222; border-radius: 3px; }
+.hamburger .line  { width: 100%; height: 3px; position: absolute; display: block;background: #222222; border-radius: 3px; }
 .hamburger .line.top { top: 0; left: 0;  transition: all 0.3s; }
 .hamburger .line.center { width: 0; top: 0; left: 0; }
 .hamburger .line.bottom { bottom: 0; left: 0;  transition: all 0.3s;  transition-delay: 0.2s; }
 .hamburger.on .line.top { width: 0; right: 0; transition: all 0.15s; }
 .hamburger.on .line.center { width: 100%; left: 0; transition: 0.2s width 0.4s; }
 .hamburger.on .line.bottom { width: 0; right: 0; transition: all 0.15s; transition-delay: 0.1s; }
+
+/* 모바일 슬라이드 메뉴*/
+.mobile_header { position: relative; }
+.mobile_header .slide_nav {  position: relative; left: 0;  top: -500px; visibility: hidden; width: calc(100% - 20px); height: 100%; margin: auto;
+    background: #FDDE58; display: flex; flex-flow: column; padding: 24px; border-radius: 20px; transition-delay: 0.1s; transition: all .2s cubic-bezier(.25, .46, .45, .94) 0s; }
+.mobile_header .slide_nav .slide_content { margin-top: 50px; display: flex; flex-flow: column; font-size: 18px; gap: 24px; }
+.mobile_header .slide_nav .slide_bottom { margin-top: 40px; }
+.mobile_header .slide_nav .slide_bottom a { display: flex; align-items: center; gap: 20px; font-weight: 700; font-size: 20px;}
+.mobile_header .slide_nav .slide_bottom .mypage-icon { background: url("../images/login-icon.svg") no-repeat;
+    width: 24px; height: 50px; display: inline-block; background-size: 24px; }
+
+/* 모바일 슬라이드 메뉴 on 클래스 넣었을때 */
+.mobile_header.on .m_header { padding: 0 34px; top: 30px;}
+.mobile_header.on .m_header .logo { visibility: hidden; }
+.mobile_header.on .hamburger .line { background: white; }
+.mobile_header.on .slide_nav { visibility: visible; top: 8px; transition: all .3s cubic-bezier(.25, .46, .45, .94) 0s; }
 
 *:focus { outline-color: #F43B00; }
 input[type=search]:focus { outline:none; }
