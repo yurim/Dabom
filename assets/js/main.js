@@ -15,3 +15,19 @@ window.addEventListener("resize", e => {
     if(wid >= 800) mHeader.classList.remove("on");
     if(wid >= 800) hamburger.classList.remove("on");
 });
+
+/*window.addEventListener('scroll', (e) => {
+    console.log(window.scrollX, window.scrollY);
+});*/
+// pc 해더
+const header = document.querySelector('header .pc_header');
+
+window.addEventListener('wheel', (e) => {
+    //console.log(e.deltaX, e.deltaY, "delta");
+    if (e.deltaY > 0) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
+});
+
