@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>다봄일지(음식수동추가)</title>
+    <link href="../assets/css/reset.css" rel="stylesheet">
+    <link href="../assets/css/layout.css" rel="stylesheet">
+    <script defer src="../assets/js/header.js"></script>
+</head>
+<body>
+<header>
+    <div class="pc_header">
+        <nav class="menu">
+            <a href="javascript:">다봄섭취</a>
+            <a href="javascript:">오늘일지</a>
+            <a href="javascript:">다봄기록</a>
+            <a href="javascript:">다봄모임</a>
+            <a href="javascript:">다봄달력</a>
+        </nav>
+        <h1 class="logo">
+            <a href="javascript:"><img alt="로고" src="/assets/images/logo.svg"></a>
+        </h1>
+        <div class="login">
+            <a href="javascript:">
+                <img alt="로그인 아이콘" src="/assets/images/login-icon.svg">
+            </a>
+        </div>
+    </div>
+    <div class="show_mobile">
+        <div class="mobile_header">
+            <div class="m_header">
+                <h1 class="logo">
+                    <a href="javascript:">
+                        <object aria-label="로고" data="../assets/images/logo.svg" type="image/svg+xml"></object>
+                    </a>
+                </h1>
+                <a class="hamburger" href="javascript:">
+                    <div class="line top"></div>
+                    <div class="line bottom"></div>
+                    <div class="line center"></div>
+                </a>
+            </div>
+            <div class="slide_nav">
+                <div class="slide_header">
+                    <h1 class="logo">
+                        <a href="javascript:">
+                            <object aria-label="로고" data="../assets/images/logo.svg" type="image/svg+xml"></object>
+                        </a>
+                    </h1>
+                </div>
+                <div class="slide_content">
+                    <a href="javascript:">다봄섭취</a>
+                    <a href="javascript:">오늘일지</a>
+                    <a href="javascript:">다봄기록</a>
+                    <a href="javascript:">다봄모임</a>
+                    <a href="javascript:">다봄달력</a>
+                </div>
+                <div class="slide_bottom">
+                    <a href="javascript:"><i class="mypage-icon"></i>마이페이지</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+<div class="record_my">
+    <div class="container">
+        <div class="date_item">
+            <div class="img_box">
+                <img src="/assets/images/small-mascot-01.svg" alt="다봄 사진 찍는 캐릭터">
+            </div>
+            <p class="date">2023년 6월 2일 금요일</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+</div>
+</main>
+</body>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+</html>
