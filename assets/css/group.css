@@ -67,8 +67,14 @@
 .group_list_wrap .bottom_box .list_box .info_box .bottom .right_box .comment em { padding-left: 5px; }
 
 /* 모임 만들기 */
-.group_wrap .upload_box{}
-.group_wrap {}
+.group_add_wrap { margin: 180px auto; }
+.group_add_wrap .container { max-width: 720px; }
+.group_add_wrap .upload_box { display: flex; flex-flow: column; align-items: center; gap: 10px; margin-bottom: 20px; }
+.group_add_wrap .upload_box .filebox .upload_img { cursor: pointer; }
+.group_add_wrap .upload_box .upload_txt { display: flex; align-items: center; font-size: 14px; font-weight: 100;}
+.group_add_wrap .upload_box .upload_txt em { font-weight: 400; }
+.group_add_wrap .upload_box .upload_txt object { filter: brightness(0.2); width: 18px; margin-right: 5px; }
+.group_add_wrap .info_box .btn_box { max-width: 720px; margin: 20px 0 30px; }
 
 
 /* ==============================================================
@@ -90,7 +96,10 @@
     .group_list_wrap .bottom_box .list_box li { gap: 0; flex-flow: column; }
     .group_list_wrap .bottom_box .list_box li .img_box { max-width: 100%; }
     .group_list_wrap .bottom_box .list_box .info_box { width: 100%;}
-
+    /* 모임 만들기 */
+    .group_add_wrap { margin: 120px auto; }
+    .group_add_wrap .upload_box .filebox .upload_img { max-width: 300px; }
+    .group_add_wrap .upload_box { margin-bottom: 30px; }
 }
 @media all and (max-width: 400px) {
     /* 찾아보기 ,내모임 , 내가 만든 모임*/
@@ -103,4 +112,6 @@
     .group_list_wrap .banner_img { height: 200px; padding-bottom: 200px; margin-bottom: 50px; }
     .group_list_wrap .bottom_box .list_box .info_box h2 { font-size: 20px; }
     .group_list_wrap .bottom_box .list_box .info_box .meal { font-size: 16px; }
+    /* 모임 만들기 */
+    .group_add_wrap .upload_box .filebox .upload_img { max-width: 250px ;}
 }
