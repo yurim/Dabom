@@ -66,6 +66,10 @@
 .group_list_wrap .bottom_box .list_box .info_box .bottom .right_box .comment i { width: 18px; padding-right: 5px; }
 .group_list_wrap .bottom_box .list_box .info_box .bottom .right_box .comment em { padding-left: 5px; }
 
+/* 모임 만들기 */
+.group_wrap .upload_box{}
+.group_wrap {}
+
 
 /* ==============================================================
   미디어 쿼리 시작
