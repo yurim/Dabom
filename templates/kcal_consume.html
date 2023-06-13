@@ -67,6 +67,7 @@
 </header>
 <main>
     <!-- .month_box a태그에 .on 들어갈때로 스타일 줬어요 -->
+    <!-- .bml_bar li에 .on 들어갈때로 스타일 줬어요 -->
     <div class="consume_wrap">
         <div class="container">
             <div class="month_box">
@@ -78,53 +79,55 @@
             <div class="kcal_box">
                 <p class="title_txt">내칼로리 / 표준칼로리</p>
                 <p class="sub_txt">
-                    <span><em>12345kcal</em> / 15432kcal</span>
-                    <span>표준 칼로리의 89%를 섭취했어요</span>
+                    <span class="title"><em>12345kcal</em> / 15432kcal</span>
+                    <span class="txt">표준 칼로리의 89%를 섭취했어요</span>
                 </p>
             </div>
             <div class="progress_box">
-                <div class="progress ">
-                    <div class="progress-bar my"></div>
+                <div class="progress" style="width: 70%">
+                    <div class="progress_bar my">2851kal(섭취칼로리)</div>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar std"></div>
+                <div class="progress" style="width: 100%">
+                    <div class="progress_bar std">3200kal(표준칼로리)</div>
                 </div>
             </div>
-            <ul class="food_list">
-                <li>
-                    <i class="circle"></i>
-                    <p>아메리카노</p>
-                    <div class="number">7회</div>
-                </li>
-                <li>
-                    <i class="circle"></i>
-                    <p>아메리카노</p>
-                    <div class="number">7회</div>
-                </li>
-                <li>
-                    <i class="circle"></i>
-                    <p>아메리카노</p>
-                    <div class="number">7회</div>
-                </li>
-                <li>
-                    <i class="circle"></i>
-                    <p>아메리카노</p>
-                    <div class="number">7회</div>
-                </li>
-                <li>
-                    <i class="circle"></i>
-                    <p>아메리카노</p>
-                    <div class="number">7회</div>
-                </li>
-                <li>
-                    <i class="circle"></i>
-                    <p>아메리카노</p>
-                    <div class="number">7회</div>
-                </li>
-            </ul>
+            <div class="list_box">
+                <h2>자주 먹은 음식</h2>
+                <ul class="food_list">
+                    <li>
+                        <p><i class="circle">1</i>아메리카노</p>
+                        <div class="number">7회</div>
+                    </li>
+                    <li>
+                        <p><i class="circle">2</i>아메리카노</p>
+                        <div class="number">7회</div>
+                    </li>
+                    <li>
+                        <p><i class="circle">3</i>아메리카노</p>
+                        <div class="number">7회</div>
+                    </li>
+                    <li>
+                        <p><i class="circle">4</i>아메리카노</p>
+                        <div class="number">7회</div>
+                    </li>
+                    <li>
+                        <p><i class="circle">5</i>아메리카노</p>
+                        <div class="number">7회</div>
+                    </li>
+                    <li>
+                        <p><i class="circle">6</i>아메리카노</p>
+                        <div class="number">7회</div>
+                    </li>
+                </ul>
+            </div>
             <div class="bml_box">
-                <p></p>
-                <p></p>
+                <div class="top_txt">
+                    <p>비만도 측정(BMI지수)</p>
+                    <p>* 나이, 신장(cm)과 체중(kg)만으로 비만을 판정하는 비만 지수</p>
+                </div>
+                 <div class="bottom_txt">
+                     <p><span class="name">닉네임</span> 님의 BMI는<br> <em>25</em>이고, <em>정상</em> 입니다.</p>
+                 </div>
                 <ul class="bml_bar">
                     <li>
                         <div class="img_box">
@@ -132,7 +135,7 @@
                         </div>
                         <div class="txt">저체중</div>
                     </li>
-                    <li>
+                    <li class="on">
                         <div class="img_box">
                             <object aria-label="사람아이콘" data="../assets/images/person-icon-02.svg" type="image/svg+xml"></object>
                         </div>
