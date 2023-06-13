@@ -1,0 +1,11 @@
+/* ==============================================================
+  다봄 섭취
+==============================================================*/
+/*filter: invert(72%) sepia(88%) saturate(997%) hue-rotate(359deg) brightness(100%) contrast(110%);*/
+.consume_wrap { margin: 180px auto; }
+.consume_wrap .container { max-width: 720px; }
+.consume_wrap .month_box { display: flex; flex-wrap: wrap; border: 1px solid #F43B00; border-radius: 3px;
+    padding: 4px 5px; gap: 5px; margin-bottom: 50px; }
+.consume_wrap .month_box a { border: 1px solid #F43B00; text-align: center; background: white; color: #F43B00;
+    width: calc(25% - 4px); border-radius: 3px; flex-grow: 1; line-height: 1.5; }
+.consume_wrap .month_box a.on { background: #F43B00; color: white; }

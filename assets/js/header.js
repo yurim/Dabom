@@ -37,10 +37,6 @@ window.addEventListener('wheel', (e) => {
     }
 });
 
-
-
-
-
 var getSize = function (Name) {
     var size;
     var name = Name.toLowerCase();
@@ -82,3 +78,23 @@ var getSize = function (Name) {
 /*window.addEventListener("resize", function() {
     result.innerText = resizeDom.getBoundingClientRect().height;
 })*/
+
+
+const loading = document.querySelector('.loading');
+const html = document.querySelector('html');
+html.style.overflow = 'hidden'; //로딩 중 스크롤 방지
+
+window.addEventListener('load', (e)=>{
+
+    setTimeout(() => { //로딩속도 구현
+
+        loading.style.opacity = '0';
+        html.style.overflow = 'auto'; //스크롤 방지 해제
+
+        setTimeout(() => {
+            loading.style.display = 'none';
+        }, 400);
+
+    }, 5000);
+
+});
