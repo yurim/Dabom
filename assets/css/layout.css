@@ -18,8 +18,7 @@
 .container { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 35px; }
 .show_mobile { display: none; }
 .ma_hidden { overflow: hidden;}
-.hidden {overflow: hidden; border: 0; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%); display: inline-block; }
+.hidden { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
 
 /*!* 로딩  *!*/
 .loading.fix { display: flex; justify-content: center; align-items: center;

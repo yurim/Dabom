@@ -52,6 +52,8 @@
 .record_wrap .record_box ul li .info_box .bottom .right_box .comment i { margin-right: 5px; }
 .record_wrap .record_box ul li .info_box .bottom .checkbox input[type=checkbox] + label { text-indent: -9999px; padding-left: 25px; background-size: 20px; }
 
+/* 내기록 상세 */
+
 /* ==============================================================
   미디어 쿼리 시작
 ==============================================================*/
