@@ -28,11 +28,12 @@ a object { pointer-events: none; }
 .kcal_popup_wrap .inner .btn_box { width: 100%; margin-top: auto; }
 
 .group_list_popup_wrap { position: fixed; right: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2);
-    z-index: 2000; overflow: hidden; }
+    z-index: 2000; overflow: hidden; display: none; }
 .group_list_popup_wrap .inner { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
     background: white; width: calc(100% - 30px); max-width: 500px; height: 100%; max-height: 500px; border-radius: 10px;
     padding: 35px; display: flex; flex-flow: column; }
 
+/* 그룹맴버보기 팝업 */
 .group_list_popup_wrap .inner .header_box { display: flex; justify-content: space-between; align-items: center;  padding-bottom: 10px;
     border-bottom: 1px solid #E1E1E1; margin-bottom: 25px; }
 .group_list_popup_wrap .inner .content_box li { display: flex; align-items: center; }
@@ -55,4 +56,14 @@ a object { pointer-events: none; }
     .email_friend_wrap .inner .content_box .btn_box a { font-size: 14px; }
     /* 오늘일지 칼로리 상세보기 팝업 */
     .kcal_popup_wrap .inner { padding: 30px 25px;}
+    /* 그룹맴버보기 팝업 */
+    .group_list_popup_wrap .inner { padding: 25px; max-height: 430px; }
+    .group_list_popup_wrap .inner .header_box { margin-bottom: 20px;}
+    .group_list_popup_wrap .inner .header_box .title { font-size: 20px; }
+    .group_list_popup_wrap .inner .header_box .close_btn object { width: 20px; }
+    .group_list_popup_wrap .inner .content_box li .img_box { width: 40px; height: 40px; margin-right: 10px; }
+}
+@media all and (max-width: 400px) {
+    /* 그룹맴버보기 팝업 */
+    .group_list_popup_wrap .inner .content_box li .name { font-size: 16px; margin-top: 2px; }
 }
