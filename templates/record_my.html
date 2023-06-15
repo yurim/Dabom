@@ -10,6 +10,7 @@
     <link href="../assets/css/layout.css" rel="stylesheet">
     <link href="../assets/css/swiper-bundle.min.css" rel="stylesheet">
     <script defer src="../assets/js/swiper-bundle.min.js"></script>
+    <script defer src="../assets/js/swiper.js"></script>
     <script defer src="../assets/js/header.js"></script>
 </head>
 <body>
@@ -75,11 +76,10 @@
                     <img alt="다봄 사진 찍는 캐릭터" src="/assets/images/small-mascot-01.svg">
                 </div>
                 <p class="date">2023년 6월 2일 금요일</p>
-                <h2>다봄모임 -10kg 아자아자</h2>
+                <h2 class="title">다봄모임 -10kg 아자아자</h2>
             </div>
-            <div class="record_slid">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
+            <div class="record_slide">
+                <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="img_box">
                                 <img alt="이미지" src="/assets/images/test.jpg">
@@ -111,22 +111,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="bottom_box">
                 <div class="meal_box">
-                    <h2>소금빵</h2>
-                    <p>380kcal</p>
-                    <span>아침</span>
+                    <h2>소금빵(1개)</h2>
+                    <p class="kcal">380kcal</p>
+                    <div class="txt">
+                        <span class="y_txt">아침</span>
+                        <span class="r_txt">유림</span>
+                    </div>
                 </div>
                 <div class="info_box">
                     <p>내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.내용을 입력학세요.</p>
                 </div>
                 <div class="btn_box">
-                    <a href="javascript:">수정하기</a>
-                    <a href="javascript:">삭제하기</a>
+                    <a class="gray_btn" href="javascript:">수정하기</a>
+                    <a class="red_btn" href="javascript:">삭제하기</a>
                 </div>
                 <div class="comment_box">
                     <div class="write_box">
@@ -140,25 +141,34 @@
                                 <p>댓글 <em>0</em>개</p>
                             </a>
                         </div>
-                        <div class="write_info"></div>
+                        <div class="write_info">
+                            <label>댓글작성하기</label>
+                            <input type="text">
+                            <a href="javascript:">댓글 작성</a>
+                        </div>
                     </div>
-                    <ul class="comment_list"></ul>
+                    <ul class="comment_list">
+                        <li>
+                            <div class="comment_text_box">
+                                <div class="nick_box">
+                                    <div class="profile_img">
+                                    <img src="../assets/images/default-profile.png" alt="프로필이미지">
+                                    </div>
+                                    <div class="info">
+                                        <div class="nick">다봄어터</div>
+                                        <div class="date"></div>
+                                    </div>
+                                </div>
+                                <div class="text_box"></div>
+                                <div class="comment_btn"></div>
+                            </div>
+                            <div class="comment_view_box"></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </main>
 </body>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
 </html>
