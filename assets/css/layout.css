@@ -31,14 +31,17 @@
 }
 /*!* 고정 알림 *!*/
 .right_menu { position: fixed; right: 35px; top: 25px; z-index: 500;}
-.right_menu .bell { display: inline-flex; position: relative; width: 40px; height: 40px;background: white;
-    border-radius: 50%; box-shadow: 0 4px 4px rgba(204, 204, 204, 0.25); justify-content: center; align-items: center; padding-right: 2px; }
+.right_menu .bell , .right_menu .setting { display: inline-flex; position: relative; width: 40px; height: 40px;background: white;
+    border-radius: 50%; box-shadow: 0 4px 4px rgba(204, 204, 204, 0.25); justify-content: center; align-items: center; }
 .right_menu .bell:before { content: ""; display: block; width: 5px; height: 5px; background: #F43B00; border-radius: 50%;
     position: absolute; right: 8px; top: 7px; z-index: 500; }
+.right_menu a + a { margin-left: 5px; }
+.right_menu .setting_menu { position: absolute; right: -20px; top: 55px; background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); border-radius: 6px; padding: 10px; z-index: 500; }
 
-/* ==============================================================
-해더
-==============================================================*/
+    /* ==============================================================
+    해더
+    ==============================================================*/
 header .pc_header { display: flex; align-items: center; margin: 0 35px; height: 60px; border: 1px solid #FDDE58; background: white;
     border-radius: 50px; padding: 0 24px; position: fixed; width: calc(100% - 70px); top: 8px; z-index: 1000; transition: all 0.25s ease;  }
 header .pc_header .menu { display: flex; gap: 10px; font-size: 14px; }
@@ -52,8 +55,8 @@ header .pc_header.active { top: -60px; transition: all 0.25s ease; }
 /* 모바일 해더 */
 .m_header { padding: 0 24px; position: fixed; width: 100%; top: 20px; z-index: 1000;
     display: flex; justify-content: space-between; align-items: center; }
-.m_header .logo object { pointer-events: none; display: block; width: 55px; }
-.slide_header .logo object { pointer-events: none; display: block; width: 55px; filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(106%) contrast(101%); }
+.m_header .logo object { display: block; width: 55px; }
+.slide_header .logo object { display: block; width: 55px; filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(106%) contrast(101%); }
 
 
 /* 모바일 햄버거 버튼 */
@@ -147,7 +150,17 @@ input[type="text"],input[type="password"] { width: 100%; }
     50% { transform: scale(.84); }
     100% { transform: scale(1); }
 }
+@media all and (max-width: 800px) {
+    /*!* 고정 알림 *!*/
+    .right_menu { right: 24px; top: 14px; }
+    .right_menu .bell, .right_menu .setting { width: 35px; height: 35px; }
+    .right_menu .bell object { width: 18px; }
+    .right_menu .bell:before { right: 6px; }
+    .right_menu .setting_menu { top: 45px; }
+}
 
 @media all and (max-width: 400px) {
     .container { padding: 0 24px; }
+    /*!* 고정 알림 *!*/
+    .right_menu { right: 20px; top: 10px; }
 }
