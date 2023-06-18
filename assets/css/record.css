@@ -76,6 +76,20 @@
 .record_wrap .bottom_box .btn_box { margin: 50px auto 40px; max-width: 700px; }
 .record_wrap .bottom_box .btn_box a { font-size: 16px; height: 40px; }
 
+.record_wrap .comment_box .top_info { display: flex; gap: 5px; margin-bottom: 10px; }
+.record_wrap .comment_box .top_info a { display: flex; align-items: center; border-radius: 3px; border: 1px solid #909090;
+ padding: 0 14px; height: 40px; }
+.record_wrap .comment_box .top_info a object { display: block; width: 24px; margin-right: 5px; }
+.record_wrap .comment_box .write_info { display: flex; gap: 15px;align-items: center; margin-bottom: 50px; }
+.record_wrap .comment_box .write_info input { width: calc(100% - 108px);}
+.record_wrap .comment_box .write_info a { border: 1px solid #222; height: 40px; border-radius: 3px; line-height: 2.5; padding: 0 14px; }
+.record_wrap .comment_box .comment_list {}
+.record_wrap .comment_box .comment_list .comment_text_box {}
+.record_wrap .comment_box .comment_list .comment_text_box .nick_box { display: flex; align-items: center; gap: 5px; margin-bottom: 15px; }
+.record_wrap .comment_box .comment_list .comment_text_box .nick_box .profile_img { width: 48px; height: 48px; border-radius: 50%; overflow: hidden;}
+.record_wrap .comment_box .comment_list .comment_text_box .nick_box .info .date { font-size: 14px; color: #909090; margin-top: 5px; }
+.record_wrap .comment_box .comment_list .comment_text_box .text_box { font-weight: 100; }
+
 /* ==============================================================
   미디어 쿼리 시작
 ==============================================================*/
