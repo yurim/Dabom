@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>메인페이지</title>
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link href="../assets/css/reset.css" rel="stylesheet">
+    <link href="../assets/css/layout.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -20,11 +20,11 @@
             <a href="javascript:">다봄달력</a>
         </nav>
         <h1 class="logo">
-            <a href="javascript:"><img src="/assets/images/logo.svg" alt="로고"></a>
+            <a href="javascript:"><img alt="로고" src="/assets/images/logo.svg"></a>
         </h1>
         <div class="login">
             <a href="javascript:">
-                <img src="/assets/images/login-icon.svg" alt="로그인 아이콘">
+                <img alt="로그인 아이콘" src="/assets/images/login-icon.svg">
             </a>
         </div>
     </div>
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="img_box">
-                <img src="/assets/images/dabom-character.png" alt="다봄캐릭터">
+                <img alt="다봄캐릭터" src="/assets/images/dabom-character.png">
             </div>
         </div>
     </section>
@@ -50,23 +50,56 @@
                 <h2 class="title">거기너 !<br>오늘 섭취한 칼로리가 궁금하지 않아?</h2>
                 <p class="sub_txt">칼로리 확인하러 가보자고 !</p>
                 <div class="search_box">
-                    <input type="text" placeholder="오늘 섭취한 음식칼로리를  확인해보세요">
+                    <input placeholder="오늘 섭취한 음식칼로리를  확인해보세요" type="text">
                 </div>
             </div>
-            <div class="right_box">
-                <div class="category_group">
-                    <div class="category_item">간편식사</div>
-                    <div class="category_item">샐러드</div>
-                    <div class="category_item">볶음요리</div>
-                    <div class="category_item">육류</div>
-                    <div class="category_item">음료</div>
-                    <div class="category_item">도시락</div>
-                    <div class="category_item">과일</div>
+            <div class="category_box">
+                <div class="category_item">
+                    <picture>
+                        <img alt="" src="../assets/images/food-01.png">
+                    </picture>
+                    <span class="cate_name">간편식사</span>
+                </div>
+                <div class="category_item">
+                    <picture>
+                        <img alt="" src="../assets/images/food-02.png">
+                    </picture>
+                    <span class="cate_name">샐러드</span>
+                </div>
+                <div class="category_item">
+                    <picture>
+                        <img alt="" src="../assets/images/food-03.png">
+                    </picture>
+                    <span class="cate_name">볶음요리</span>
+                </div>
+                <div class="category_item">
+                    <picture>
+                        <img alt="" src="../assets/images/food-04.png">
+                    </picture>
+                    <span class="cate_name">육류</span>
+                </div>
+                <div class="category_item">
+                    <picture>
+                        <img alt="" src="../assets/images/food-05.png">
+                    </picture>
+                    <span class="cate_name">음료</span>
+                </div>
+                <div class="category_item">
+                    <picture>
+                        <img alt="" src="../assets/images/food-06.png">
+                    </picture>
+                    <span class="cate_name">도시락</span>
+                </div>
+                <div class="category_item">
+                    <picture>
+                        <img alt="" src="../assets/images/food-07.png">
+                    </picture>
+                    <span class="cate_name">과일</span>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="story_wrap">
         <div class="container"></div>
     </section>
     <section>
