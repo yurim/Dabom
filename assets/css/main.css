@@ -49,3 +49,9 @@ section 2 칼로리 검색
 /* ==============================================================
 section 3 식단슬라이드
 ==============================================================*/
+.story_wrap { position: relative;}
+.story_wrap .story_top { display: flex; margin-bottom: 80px;}
+.story_wrap .story_top .title { font-size: 42px; }
+.story_wrap .story_top .swiper_btn { position: relative; }
+.story_wrap .story_top .swiper_btn .swiper-button-prev { display: block; background: url("../images/swiper-arrow-left.svg") no-repeat;}
+.story_wrap .story_top .swiper_btn .swiper-button-next { display: block; background: url("../images/swiper-arrow-right.svg") no-repeat; }

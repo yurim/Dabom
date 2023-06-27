@@ -8,6 +8,10 @@
     <title>메인페이지</title>
     <link href="../assets/css/reset.css" rel="stylesheet">
     <link href="../assets/css/layout.css" rel="stylesheet">
+    <link href="../assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <script defer src="../assets/js/swiper-bundle.min.js"></script>
+    <script defer src="../assets/js/swiper.js"></script>
+    <script defer src="../assets/js/header.js"></script>
 </head>
 <body>
 <header>
@@ -20,12 +24,47 @@
             <a href="javascript:">다봄달력</a>
         </nav>
         <h1 class="logo">
-            <a href="javascript:"><img alt="로고" src="/assets/images/logo.svg"></a>
+            <a href="javascript:"><img src="/assets/images/logo.svg" alt="로고"></a>
         </h1>
         <div class="login">
             <a href="javascript:">
-                <img alt="로그인 아이콘" src="/assets/images/login-icon.svg">
+                <img src="/assets/images/login-icon.svg" alt="로그인 아이콘">
             </a>
+        </div>
+    </div>
+    <div class="show_mobile">
+        <div class="mobile_header">
+            <div class="m_header">
+                <h1 class="logo">
+                    <a href="javascript:">
+                        <object data="../assets/images/logo.svg" type="image/svg+xml" aria-label="로고"></object>
+                    </a>
+                </h1>
+                <a class="hamburger" href="javascript:">
+                    <div class="line top"></div>
+                    <div class="line bottom"></div>
+                    <div class="line center"></div>
+                </a>
+            </div>
+            <div class="slide_nav">
+                <div class="slide_header">
+                    <h1 class="logo">
+                        <a href="javascript:">
+                            <object data="../assets/images/logo.svg" type="image/svg+xml" aria-label="로고"></object>
+                        </a>
+                    </h1>
+                </div>
+                <div class="slide_content">
+                    <a href="javascript:">다봄섭취</a>
+                    <a href="javascript:">오늘일지</a>
+                    <a href="javascript:">다봄기록</a>
+                    <a href="javascript:">다봄모임</a>
+                    <a href="javascript:">다봄달력</a>
+                </div>
+                <div class="slide_bottom">
+                    <a href="javascript:"><i class="mypage-icon"></i>마이페이지</a>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -100,7 +139,55 @@
         </div>
     </section>
     <section class="story_wrap">
-        <div class="container"></div>
+        <div class="container">
+            <div class="story_top">
+                <h2 class="title">Cooking Story</h2>
+<!--                <img src="../assets/images/zigzag-01.svg" alt="">-->
+<!--                <object aria-label="지그재그이미지" data="../assets/images/zigzag-01.svg" type="image/svg+xml"></object>-->
+                <div class="swiper_btn">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="story_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:">
+                            <div class="img_box">
+                                <img src="../assets/images/default-background.png" alt="식단이미지">
+                            </div>
+                            <div class="buttom_box">
+                                <div class="pattern"></div>
+                                <div class="txt">more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:">
+                            <div class="img_box">
+                                <img src="../assets/images/default-background.png" alt="식단이미지">
+                            </div>
+                            <div class="buttom_box">
+                                <div class="pattern"></div>
+                                <div class="txt">more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:">
+                            <div class="img_box">
+                                <img src="../assets/images/default-background.png" alt="식단이미지">
+                            </div>
+                            <div class="buttom_box">
+                                <div class="pattern"></div>
+                                <div class="txt">more</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
     <section>
         <div class="container"></div>

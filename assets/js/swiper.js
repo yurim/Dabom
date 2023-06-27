@@ -13,3 +13,18 @@ const recordSlide = new Swiper(".record_slide", {
         loadPrevNext : true
     },
 });
+const storySlide = new Swiper(".story_slide", {
+    direction: "horizontal",
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    loopFillGroupWithBlank : true,
+    spaceBetween: 20,
+    loop: false,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    lazy : {
+        loadPrevNext : true
+    },
+});
