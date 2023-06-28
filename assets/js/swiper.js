@@ -19,7 +19,7 @@ const storySlide = new Swiper(".story_slide", {
     slidesPerGroup: 3,
     loopFillGroupWithBlank : true,
     spaceBetween: 20,
-    loop: false,
+    loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

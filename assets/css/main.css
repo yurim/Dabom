@@ -50,8 +50,24 @@ section 2 칼로리 검색
 section 3 식단슬라이드
 ==============================================================*/
 .story_wrap { position: relative;}
-.story_wrap .story_top { display: flex; margin-bottom: 80px;}
+.story_wrap .story_top { display: flex; margin-bottom: 80px; position: relative; }
 .story_wrap .story_top .title { font-size: 42px; }
-.story_wrap .story_top .swiper_btn { position: relative; }
-.story_wrap .story_top .swiper_btn .swiper-button-prev { display: block; background: url("../images/swiper-arrow-left.svg") no-repeat;}
-.story_wrap .story_top .swiper_btn .swiper-button-next { display: block; background: url("../images/swiper-arrow-right.svg") no-repeat; }
+/* 버튼 */
+.story_wrap .story_top .swiper-button-next,
+.story_wrap .story_top .swiper-button-prev { position: relative; width: 50px; height: 50px; border: 2px solid #222;
+    margin-left: 25px; margin-top: inherit;  z-index: 2; overflow: hidden; }
+.story_wrap .story_top .swiper-button-next::after,
+.story_wrap .story_top .swiper-button-prev::after { content: ""; z-index: -1; width: 100%; height: 100%;
+    background-color: #F43B00; margin-top: -100%; margin-right: -100%; position: absolute; top: 0;bottom: auto; left: auto; right: 0;
+    transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d; transition: transform .35s; }
+.story_wrap .story_top .swiper-button-next object,
+.story_wrap .story_top .swiper-button-prev object { pointer-events: none; transition: all .3s;}
+/* 버튼 호버시 */
+.story_wrap .story_top .swiper-button-next:hover:after,
+.story_wrap .story_top .swiper-button-prev:hover:after { transform: translate3d(-100%, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); }
+.story_wrap .story_top .swiper-button-next:hover object,
+.story_wrap .story_top .swiper-button-prev:hover object { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(124%) contrast(101%); }
+.story_wrap .story_top .swiper-button-next.swiper-button-disabled,
+.story_wrap .story_top .swiper-button-prev.swiper-button-disabled { opacity: 1; }
+
