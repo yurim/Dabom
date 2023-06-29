@@ -49,13 +49,15 @@ section 2 칼로리 검색
 /* ==============================================================
 section 3 식단슬라이드
 ==============================================================*/
-.story_wrap { position: relative;}
-.story_wrap .story_top { display: flex; margin-bottom: 80px; position: relative; }
+.story_wrap { position: relative; overflow: hidden; }
+.story_wrap .story_top { display: flex; margin-bottom: 80px; position: relative; justify-content: space-between; }
 .story_wrap .story_top .title { font-size: 42px; }
+.story_wrap .story_top .line { width: calc(100% - 490px); padding: 0 1.4vw; display: inline-block; }
 /* 버튼 */
+.story_wrap .story_top .swiper-button-prev { left: inherit; }
+.story_wrap .story_top .swiper-button-next { margin-left: 15px; right: inherit; }
 .story_wrap .story_top .swiper-button-next,
-.story_wrap .story_top .swiper-button-prev { position: relative; width: 50px; height: 50px; border: 2px solid #222;
-    margin-left: 25px; margin-top: inherit;  z-index: 2; overflow: hidden; }
+.story_wrap .story_top .swiper-button-prev { position: relative; width: 50px; height: 50px; border: 2px solid #222; margin-top: inherit;  z-index: 2; overflow: hidden; }
 .story_wrap .story_top .swiper-button-next::after,
 .story_wrap .story_top .swiper-button-prev::after { content: ""; z-index: -1; width: 100%; height: 100%;
     background-color: #F43B00; margin-top: -100%; margin-right: -100%; position: absolute; top: 0;bottom: auto; left: auto; right: 0;
@@ -68,6 +70,11 @@ section 3 식단슬라이드
 .story_wrap .story_top .swiper-button-prev:hover:after { transform: translate3d(-100%, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); }
 .story_wrap .story_top .swiper-button-next:hover object,
 .story_wrap .story_top .swiper-button-prev:hover object { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(124%) contrast(101%); }
-.story_wrap .story_top .swiper-button-next.swiper-button-disabled,
-.story_wrap .story_top .swiper-button-prev.swiper-button-disabled { opacity: 1; }
+/*.story_wrap .story_top .swiper-button-next.swiper-button-disabled,*/
+/*.story_wrap .story_top .swiper-button-prev.swiper-button-disabled { opacity: 1; }*/
+/* 슬라이드 */
+.story_wrap .story_slide .swiper-slide { width: 25%; }
+.story_wrap .story_slide .swiper-slide a { position: relative;}
+.story_wrap .story_slide .swiper-slide a .img_box { width: 100%; height: auto; box-sizing: border-box; display: block; padding-bottom: 100%; }
+.story_wrap .story_slide .swiper-slide a .img_box img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; }
 

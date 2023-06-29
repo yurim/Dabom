@@ -13,18 +13,37 @@ const recordSlide = new Swiper(".record_slide", {
         loadPrevNext : true
     },
 });
-const storySlide = new Swiper(".story_slide", {
-    direction: "horizontal",
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    loopFillGroupWithBlank : true,
-    spaceBetween: 20,
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    lazy : {
-        loadPrevNext : true
-    },
-});
+
+
+// const storySlide = new Swiper(".story_slide", {
+//     direction: "horizontal",
+//     slidesPerView: 'auto',
+//     spaceBetween: 10,
+//     loop: true,
+//     slidesOffsetAfter: '10',
+//     loopAdditionalSlides: 1,
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+//     lazy : {
+//         loadPrevNext : true
+//     },
+// });
+
+    const storySlide = new Swiper(".story_slide", {
+            slidesPerView: 'auto',
+        // spaceBetween: 10,
+        rewind: true,
+        loop: true,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        lazy : {
+            loadPrevNext : true
+        },
+
+    });
+
