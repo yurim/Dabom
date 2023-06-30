@@ -70,11 +70,17 @@ section 3 식단슬라이드
 .story_wrap .story_top .swiper-button-prev:hover:after { transform: translate3d(-100%, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); }
 .story_wrap .story_top .swiper-button-next:hover object,
 .story_wrap .story_top .swiper-button-prev:hover object { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(124%) contrast(101%); }
-/*.story_wrap .story_top .swiper-button-next.swiper-button-disabled,*/
-/*.story_wrap .story_top .swiper-button-prev.swiper-button-disabled { opacity: 1; }*/
 /* 슬라이드 */
+.story_wrap .story_slide .swiper-wrapper { gap: 20px; }
 .story_wrap .story_slide .swiper-slide { width: 25%; }
-.story_wrap .story_slide .swiper-slide a { position: relative;}
+.story_wrap .story_slide .swiper-slide a { display: block; position: relative; border-radius: 30px; overflow: hidden;}
 .story_wrap .story_slide .swiper-slide a .img_box { width: 100%; height: auto; box-sizing: border-box; display: block; padding-bottom: 100%; }
 .story_wrap .story_slide .swiper-slide a .img_box img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; }
+.story_wrap .story_slide .swiper-slide a .buttom_box { position: absolute; bottom: 0; width: 100%; background: #F43B00;
+    transition: .3s all cubic-bezier(0.5, 0, 0, 1); transform: translate(0, 6rem); }
+.story_wrap .story_slide .swiper-slide a .buttom_box .pattern { position: absolute; left: 0; top: -10px; width: 100%; }
+.story_wrap .story_slide .swiper-slide a .buttom_box .pattern object { width: 100%; min-width: 31rem;}
+.story_wrap .story_slide .swiper-slide a .buttom_box .txt { font-size: 24px; text-align: center; color: white; padding: 1rem 1.875rem 1rem; }
+/* 슬라이드 호버시 */
+.story_wrap .story_slide .swiper-slide a:hover .buttom_box { transform: translate3d(0, 0, 0);}
 
