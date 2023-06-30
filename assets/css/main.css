@@ -73,14 +73,15 @@ section 3 식단슬라이드
 /* 슬라이드 */
 .story_wrap .story_slide .swiper-wrapper { gap: 20px; }
 .story_wrap .story_slide .swiper-slide { width: 25%; }
-.story_wrap .story_slide .swiper-slide a { display: block; position: relative; border-radius: 30px; overflow: hidden;}
+.story_wrap .story_slide .swiper-slide a { display: block; position: relative; border-radius: 30px; overflow: hidden; transition: .2s all cubic-bezier(0.5, 0, 0, 1); }
 .story_wrap .story_slide .swiper-slide a .img_box { width: 100%; height: auto; box-sizing: border-box; display: block; padding-bottom: 100%; }
 .story_wrap .story_slide .swiper-slide a .img_box img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; }
 .story_wrap .story_slide .swiper-slide a .buttom_box { position: absolute; bottom: 0; width: 100%; background: #F43B00;
-    transition: .3s all cubic-bezier(0.5, 0, 0, 1); transform: translate(0, 6rem); }
-.story_wrap .story_slide .swiper-slide a .buttom_box .pattern { position: absolute; left: 0; top: -10px; width: 100%; }
-.story_wrap .story_slide .swiper-slide a .buttom_box .pattern object { width: 100%; min-width: 31rem;}
-.story_wrap .story_slide .swiper-slide a .buttom_box .txt { font-size: 24px; text-align: center; color: white; padding: 1rem 1.875rem 1rem; }
+    transition: .3s all cubic-bezier(0.5, 0, 0, 1); transform: translate(0, 6rem); padding: 1rem 1.875rem 1rem;}
+.story_wrap .story_slide .swiper-slide a .buttom_box .pattern { position: absolute; left: 0; top: -10px; width: 100%; overflow: hidden; }
+.story_wrap .story_slide .swiper-slide a .buttom_box .pattern object { width: 100%; min-width: 30rem;}
+.story_wrap .story_slide .swiper-slide a .buttom_box .txt { font-size: 24px; text-align: center; color: white;  }
 /* 슬라이드 호버시 */
+.story_wrap .story_slide .swiper-slide a:hover { box-shadow: 0 5px 10px 0 rgba(0,0,0,.2); margin-bottom: 10px; }
 .story_wrap .story_slide .swiper-slide a:hover .buttom_box { transform: translate3d(0, 0, 0);}
 
