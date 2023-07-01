@@ -17,6 +17,7 @@
 ==============================================================*/
 .container { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 35px; }
 .show_mobile { display: none; }
+.mobile_hidden { display: none; }
 .ma_hidden { overflow: hidden;}
 .hidden { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
 
