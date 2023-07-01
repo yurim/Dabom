@@ -88,30 +88,30 @@ section 3 식단슬라이드
 /* ==============================================================
 section 4 식단일기소개
 ==============================================================*/
-.food_diary_wrap:after { content: ""; position: absolute; left: 0; bottom: -5px; background: url("/assets/images/zigzag-04.svg") repeat-x;
+.introduce_wrap:after { content: ""; position: absolute; left: 0; bottom: -5px; background: url("/assets/images/zigzag-04.svg") repeat-x;
     width: 100%; height: 40px; background-size: 70px; }
-.food_diary_wrap:before { content: ""; position: absolute; left: 0; top: -5px; background: url("/assets/images/zigzag-04.svg") repeat-x;
+.introduce_wrap:before { content: ""; position: absolute; left: 0; top: -5px; background: url("/assets/images/zigzag-04.svg") repeat-x;
     width: 100%; height: 40px; background-size: 70px; transform: rotate(180deg); }
-.food_diary_wrap { background: #FBF4E4; position: relative; padding: 90px 0 50px; }
-.food_diary_wrap .container { position: relative; }
-.food_diary_wrap .top_txt { text-align: center; margin-bottom: 65px;}
-.food_diary_wrap .top_txt .small_txt { color: #FFCC00; font-size: 20px; margin-bottom: 15px;}
-.food_diary_wrap .top_txt .title { font-size: 44px; font-weight: 100; line-height: 1.2; }
-.food_diary_wrap .top_txt .title em { font-weight: 700; }
+.introduce_wrap { background: #FBF4E4; position: relative; padding: 90px 0 50px; }
+.introduce_wrap .container { position: relative; }
+.introduce_wrap .top_txt { text-align: center; margin-bottom: 65px;}
+.introduce_wrap .top_txt .small_txt { color: #FFCC00; font-size: 20px; margin-bottom: 15px;}
+.introduce_wrap .top_txt .title { font-size: 44px; font-weight: 100; line-height: 1.2; }
+.introduce_wrap .top_txt .title em { font-weight: 700; }
 
-.food_diary_wrap .text_group span { font-size: 18px; color: white; padding: 15px 20px 14px 20px; position: absolute;
+.introduce_wrap .text_group span { font-size: 18px; color: white; padding: 15px 20px 14px 20px; position: absolute;
     top: calc(50% + 70px); transform: translateY(-50%); box-shadow: 10px 30px 20px 0 rgba(0, 0, 0, 0.16); }
-.food_diary_wrap .text_group span:nth-child(1) { background: #F43B00; border-radius: 22px 22px 0 22px; left: 75px;}
-.food_diary_wrap .text_group span:nth-child(2) { background: #222; border-radius: 22px 22px 0 22px;
+.introduce_wrap .text_group span:nth-child(1) { background: #F43B00; border-radius: 22px 22px 0 22px; left: 75px;}
+.introduce_wrap .text_group span:nth-child(2) { background: #222; border-radius: 22px 22px 0 22px;
     left: calc(50% - 25%); transform: translate(-50%,-50%);}
-.food_diary_wrap .text_group span:nth-child(3) { background: #F43B00; border-radius: 22px 22px 22px 0;
+.introduce_wrap .text_group span:nth-child(3) { background: #F43B00; border-radius: 22px 22px 22px 0;
     right: calc(50% - 32%); transform: translate(-50%,-50%); }
-.food_diary_wrap .text_group span:nth-child(4) { background: #222; border-radius: 22px 22px 22px 0; right: 80px;}
+.introduce_wrap .text_group span:nth-child(4) { background: #222; border-radius: 22px 22px 22px 0; right: 80px;}
 
-.food_diary_wrap .char_group { display: flex; justify-content: space-between; }
-.food_diary_wrap .char_group  { display: flex; }
-.food_diary_wrap .char_group .img_box:not(:nth-child(4)) { width: 120px; margin-top: auto; }
-.food_diary_wrap .char_group .img_box:nth-child(4) { width: 260px;}
+.introduce_wrap .char_group { display: flex; justify-content: space-between; }
+.introduce_wrap .char_group  { display: flex; }
+.introduce_wrap .char_group .img_box:not(:nth-child(4)) { width: 120px; margin-top: auto; }
+.introduce_wrap .char_group .img_box:nth-child(4) { width: 260px;}
 
 
 
