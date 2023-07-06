@@ -79,7 +79,7 @@ section 3 식단슬라이드
 .story_wrap .story_slide .swiper-slide a .buttom_box { position: absolute; bottom: 0; width: 100%; background: #F43B00;
     transition: .3s all cubic-bezier(0.5, 0, 0, 1); transform: translate(0, 6rem); padding: 1rem 1.875rem 1rem;}
 .story_wrap .story_slide .swiper-slide a .buttom_box .pattern { position: absolute; left: 0; top: -10px; width: 100%; overflow: hidden; }
-.story_wrap .story_slide .swiper-slide a .buttom_box .pattern object { width: 100%; min-width: 30rem;}
+.story_wrap .story_slide .swiper-slide a .buttom_box .pattern object { width: 100%; min-width: 31rem;}
 .story_wrap .story_slide .swiper-slide a .buttom_box .txt { font-size: 24px; text-align: center; color: white;  }
 /* 슬라이드 호버시 */
 .story_wrap .story_slide .swiper-slide a:hover { box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);}
@@ -167,7 +167,7 @@ hr.zag { position: relative; opacity: 0.4; z-index: 50;
 
 @media all and (max-width: 1200px) {
     .mobile_hidden { display: none; }
-    .show_mobile { display: block !important; }
+     main .show_mobile { display: block !important; }
      section { margin: 150px 0; }
     .hero_wrap { height: 100%; max-height: 680px; }
     .hero_wrap .container { flex-flow: column; }

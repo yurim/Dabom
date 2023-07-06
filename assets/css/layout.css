@@ -17,7 +17,6 @@
 ==============================================================*/
 .container { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 35px; }
 .show_mobile { display: none; }
-.mobile_hidden { display: none; }
 .ma_hidden { overflow: hidden;}
 .hidden { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
 
@@ -57,7 +56,6 @@ header .pc_header .logo { position: absolute; left: 50%; transform: translateX(-
 header .pc_header .logo a { display: block; width: 60px;}
 header .pc_header .login { margin-left: auto; }
 header .pc_header .login a { display: block; width: 25px; }
-
 header .pc_header.active { top: -60px; transition: all 0.25s ease; }
 
 /* 모바일 해더 */
